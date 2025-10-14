@@ -1,6 +1,5 @@
 #write a program to implement the water jug problem 
 
-print("Water jug problem ")
 x=int(input("Enter X: "))
 y=int(input("Enter Y: "))
 while True:
