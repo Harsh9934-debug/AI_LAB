@@ -1,3 +1,5 @@
+# write a program to solve the graph coloring problem
+
 def color_vertices(graph):
     vertices = sorted(list(graph.keys()))
     color_graph = {}
