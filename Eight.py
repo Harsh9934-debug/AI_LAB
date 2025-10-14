@@ -1,3 +1,5 @@
+# Rat in a Maze problem using Backtracking
+
 maze = [[1,0,0,0],[1,1,0,1],[0,1,0,0],[1,1,1,1]]
 
 def solve(m):
