@@ -19,6 +19,11 @@ def tsp(graph,s):
         current_pathweight+=graph[k][s]
         min_path=min(min_path,current_pathweight)
     return min_path
-graph=[[0,10,15,20],[10,0,35,25],[15,35,0,30],[20,25,30,0]]
+graph=[
+    [1,2,3,4],
+    [5,6,7,8],
+    [9,10,11,12],
+    [13,14,15,16]
+    ]
 s=0
 print("The minimum cost of the travel salesman problem is ",tsp(graph,s))   
