@@ -10,3 +10,4 @@ def f(x,y):
     s[x][y]=0
 f(0,0)
 for r in s:print(*r)
+
