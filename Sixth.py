@@ -2,23 +2,10 @@
 
 from sys import maxsize
 from itertools import permutations  
-V=4
-def tsp(graph,s):
-    vertex=[]
-    for i in range(V):
-        if i!=s:
-            vertex.append(i)
-    min_path=maxsize
-    next_permutation=permutations(vertex)
-    for i in next_permutation:
-        current_pathweight=0
-        k=s
-        for j in i:
-            current_pathweight+=graph[k][j]
-            k=j
-        current_pathweight+=graph[k][s]
-        min_path=min(min_path,current_pathweight)
-    return min_path
+def tsp(g,s=0):
+    n=len(g)
+    vs=[i for i in range(n) if i!=s]
+    return min(sum(g[a][b] for a,b in zip((s,)+p,p+(s,))) for p in permutations(vs))
 graph=[
     [1,2,3,4],
     [5,6,7,8],
@@ -26,4 +13,4 @@ graph=[
     [13,14,15,16]
     ]
 s=0
-print("The minimum cost of the travel salesman problem is ",tsp(graph,s))   
+print('The minimum cost of the travel salesman problem is',tsp(graph,s))
