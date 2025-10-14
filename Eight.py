@@ -21,3 +21,4 @@ def solve(m):
 
 if __name__=='__main__':
     solve(maze)
+    
