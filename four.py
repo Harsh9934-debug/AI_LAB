@@ -36,3 +36,6 @@ while True:
     if x==2:
         print("Goal State Reached")
         break
+
+# To run this give it like 
+# 2 9 2 7 5 9 
