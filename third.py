@@ -8,7 +8,7 @@ graph={
 }
 
 
-visited = set()
+visited=set()
 def dfs(visited,graph,node):
     if node not in visited:
         print(node)
