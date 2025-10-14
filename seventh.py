@@ -8,4 +8,4 @@ g={
 c={}
 for v in sorted(g):
     c[v]=next(i for i in range(len(g)) if all (c.get(n)!=i for n in g[v]))
-print("Colouring of the graph is ",c)
+print("Coloring of graph is",c)
