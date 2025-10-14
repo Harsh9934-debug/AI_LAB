@@ -2,7 +2,6 @@
 
 def printlatin(n):
     for i in range(n):
-        for j in range(n):
-            print((i+j)%n+1,end=" ")
-        print()
-printlatin(4)
+        print(*list(range(i+1,n+1))
+              +list(range(1,i+1)))
+printlatin(5)
