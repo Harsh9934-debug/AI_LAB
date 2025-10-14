@@ -1,18 +1,6 @@
-# write a program to solve the graph coloring problem
-
-def color_vertices(g):
-    vs = sorted(g)
-    c = {}
-    for v in vs:
-        used = {c[n] for n in g.get(v, []) if n in c}
-        c[v] = next(i for i in range(len(vs)) if i not in used)
-    return c
-
-if __name__ == '__main__':
-    g = {
-        'A':['B','C','D'],
-        'B':['A','D'],
-        'C':['A','D'],
-        'D':['A','B','C','E'],
-        'E':['D']}
-    print('Coloring of graph is', color_vertices(g))
+g=[[1,2,3,4],[5,6,7,8],[9,10,11,12],[13,14,15,16]]
+c=[-1]*len(g)
+for v in range(len(g)):
+    used={c[i]for i in range(len(g))if g[v][i]and c[i]!=-1}
+    c[v]=next(x for x in range(len(g))if x not in used)
+print("Represents the different Colors addigned to each vertices:",c)
