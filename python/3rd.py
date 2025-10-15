@@ -11,5 +11,6 @@ for i in college :
     print(i)
 print(college[:3])
 print(college[3:])
+print(college[2:5])
 
 print(college.replace("Presidency","PES"))
