@@ -9,3 +9,5 @@ def fibo(n):
 terms = int(input("enter the number of terms: "))
 fibosq = fibo(terms)
 print(fibosq)
+
+print("The Fibonacci sequence is:")
