@@ -1,3 +1,5 @@
+#Write a program to generate fibonacci series
+
 def fibo(n):
 	a, b = 0, 1
 	result = []
