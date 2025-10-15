@@ -6,7 +6,7 @@ print(type(a))
 b=10.5
 print(type(b))
 
-c=1+2j
+c=1.2j
 print(type(c))
 
 d="hello"
