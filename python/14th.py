@@ -1,9 +1,10 @@
-#write a pogram to filer even number from the even list 
+# Write a program to filter even numbers from a list
 
-def even(n):
-    if n%2==0:
-        return True
-    return False    
+# n = [1,2,3,4,5,6,7,8,9,10]
+# print([x for x in n if x % 2 == 0])
+
+
 n=[1,2,3,4,5,6,7,8,9,10]
-out=list(filter(even,n))
-print(out)
+for i in n:
+    if i%2==0:
+        print(i)
