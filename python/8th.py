@@ -1,3 +1,5 @@
+# working of the if  elif and else
+
 score=95
 
 print("Your score is",score)
