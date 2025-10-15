@@ -2,6 +2,6 @@
 
 n=int(input("enter the number of terms: "))
 
-while n>0:
+while n>=0:
     print(n)
     n=n-1
