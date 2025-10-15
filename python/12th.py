@@ -21,4 +21,7 @@ a.reverse()
 print(a)
 b=[7,8,9]
 a.extend(b)
-print(a)    
+print(a)  
+a.clear()
+print(a)
+  
